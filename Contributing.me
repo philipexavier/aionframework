@@ -1,0 +1,67 @@
+# Contributing to AION Framework
+
+Thank you for your interest in contributing.
+
+## Principles
+
+AION prioritizes:
+
+* Architectural clarity
+* Modularity
+* Traceability
+* Governance
+* Testability
+
+Before contributing, ensure changes align with these principles.
+
+---
+
+## Development Setup
+
+```bash
+cd infra
+docker compose up --build
+```
+
+---
+
+## Branch Strategy
+
+* `main` → stable
+* `dev` → integration
+* feature branches → `feature/<name>`
+
+---
+
+## Pull Request Guidelines
+
+1. Provide clear description
+2. Reference issue if applicable
+3. Include tests when relevant
+4. Do not break `/chat` contract
+5. Ensure logs remain structured
+
+---
+
+## Code Standards
+
+* Python 3.11+
+* Pydantic models for contracts
+* No silent failures
+* Explicit error handling
+
+---
+
+## Governance Rule
+
+No PR will be accepted if it:
+
+* Removes citation enforcement
+* Breaks traceability
+* Hardcodes provider dependencies
+
+AION must remain pluggable and auditable.
+
+---
+
+Thank you for building structured AI infrastructure.
